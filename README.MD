@@ -1,7 +1,7 @@
 # A ReadME for Tommy's Page
 #v1.0.0
 ---
-## Table of contents
+# Table of contents
 
 * Introduction
 * Design
