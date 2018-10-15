@@ -63,6 +63,9 @@ This is a portfolio webpage developed by Tommy Tse. It's a one page design inclu
 
 # Reference
 
-Background images: https://www.pexels.com/
-title icon: https://www.iconfinder.com/
-contact-buttons: https://github.com/joego/contact-buttons-plugin
+* Background images: https://www.pexels.com/
+* title icon: https://www.iconfinder.com/
+* contact-buttons: https://github.com/joego/contact-buttons-plugin
+* animation: https://daneden.github.io/animate.css/
+* scrolling effects: https://michalsnik.github.io/aos/
+* button effects: https://michalsnik.github.io/aos/
