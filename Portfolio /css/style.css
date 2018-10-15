@@ -1,0 +1,597 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Saira+Extra+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+body {
+  height: 100%;
+  background: #fff;
+  margin: 0;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, {
+  position: relative;
+  font-weight: 600 !important;
+  color:#e85a19;
+  padding-bottom: 10vh;
+  text-transform: uppercase;
+}
+
+p {
+  color: #40e495;
+  font-size: 1.5rem;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+#header {
+  background-image: url(../assets/pexels-photo.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 0;
+
+  /* flex the container to center */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  padding-top: 5vh;
+}
+#header h1 {
+  color: #fff;
+  padding-bottom: 10vh;
+  font-family: 'Dosis', sans-serif;
+
+  /* neon light effect */
+  text-shadow: 0px 0px 10px gold,
+              0px 0px 20px gold,
+              0px 0px 30px gold,
+              0px 0px 40px gold,
+              0px 0px 50px gold,
+              0px 0px 60px gold,
+              0px 0px 70px gold;
+}
+
+#header h1.display-4{
+  text-shadow: 0px 0px 10px skyblue,
+              0px 0px 20px skyblue,
+              0px 0px 30px skyblue,
+              0px 0px 40px skyblue,
+              0px 0px 50px skyblue,
+              0px 0px 60px skyblue,
+              0px 0px 70px skyblue;
+}
+
+#header h1 span.special {
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;
+}
+
+#header div.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header img {
+  display: block;
+  width:30vw;
+  height:auto;
+}
+@-webkit-keyframes mymove {
+  0% {color:#fff;}
+  50% {color: blue;}
+  100% {color: #fff;}
+}
+
+@keyframes mymove {
+  0% {color:#fff;}
+  50% {color: blue;}
+  100% {color: #fff;}
+}
+/* responsive design for mobile */
+@media screen and (max-width: 800px) {
+  #header h1, #header span{
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+
+  #header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+ 
+
+/* about section */
+
+#about{
+  background-image: url(../assets/about.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#about .container{
+  padding-top: 0;
+  height: 40%;
+
+}
+
+#about h1{
+  color: #e85a19;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+}
+
+#about h1::after{
+  content:'';
+  display: block;
+  width: 4rem;
+  border: 2px solid #e85a19;
+}
+
+#about .square {
+  position: relative;
+  left: 120%;
+  bottom: 30%;
+  height: 40vh;
+  width: 20vh;
+  background: #25aae1;
+  transform: rotate(-17deg);
+  transition: .5s;
+}
+
+#about .square div {
+  position: absolute;
+  content:'';
+  height: 40vh;
+  width: 20vh;
+  border: 1px solid rebeccapurple;
+  transform: rotate(-10deg);
+  transition: .5s;
+}
+
+#about div.rabbit {
+   
+}
+
+
+/* album section */
+#album {
+  font-family: 'Charmonman', cursive;
+  font-size: 3rem;
+  height: 150vh;
+}
+
+.hero-bkg-animated {
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+/* contact section */
+.contact-form{
+  margin: 50px auto;
+  padding: 25px 20px 10px;
+  background: #44e085;
+  opacity: 0.9;
+  box-shadow: 2px 2px 4px #085f25;
+  border-radius: 5px;
+  color: #fff;
+}
+.contact-form h2{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+
+.contact .row {
+  justify-content: center;
+}
+
+#contact {
+  position: relative;
+  background-image: url(../assets/contact.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 110vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar */
+
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.25s ease;
+}
+.button_container:hover {
+  opacity: 0.7;
+}
+.button_container.active .top {
+  transform: translateY(10px) translateX(0) rotate(45deg);
+  background: #fff;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #fff;
+}
+.button_container.active .bottom {
+  transform: translateY(-10px) translateX(0) rotate(-45deg);
+  background: #fff;
+}
+.button_container span {
+  background: #ff5252;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 10px;
+}
+.button_container span:nth-of-type(3) {
+  top: 20px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, width 0.35s;
+  z-index: 50;
+}
+.overlay:before {
+  content: '';
+  background: rgba(49, 196, 172, 0.75);
+  left: -55%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  transition: left 0.35s ease;
+}
+.overlay:after {
+  content: '';
+  background: rgba(49, 196, 172, 0.75);
+  right: -55%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.35s ease;
+}
+.overlay.open {
+  opacity: 0.9;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open:before {
+  left: 0;
+}
+.overlay.open:after {
+  right: 0;
+}
+.overlay.open li {
+  animation: fadeInLeft 0.5s ease forwards;
+  animation-delay: 0.35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation: fadeInLeft 0.5s ease forwards;
+  animation-delay: 0.55s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.65s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  text-align: center;
+  z-index: 100;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #fff;
+  transition: 0.35s;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 40%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    right: 40%;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header button hover effect */
+#header .buttons {
+  text-align: left;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 20px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.btn-hover.color-2 {
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+
+
+
+
+
+
+
+
+
+/* contact-button */
+/*!
+ * Contact Buttons Plugin Demo 0.1.0
+ * https://github.com/joege/contact-buttons-plugin
+ *
+ * Copyright 2015, José Gonçalves
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+ #contact-buttons-bar {
+  position: fixed;
+  top: 120px;
+  left: -50px;
+  width: 50px;
+  z-index: 20;
+}
+
+.contact-button-link  {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-bottom: 1px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background: #8e8e93;
+  color: #fff;
+  position: relative;
+  left: 0;
+
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  -webkit-transition: all 250ms;
+     -moz-transition: all 250ms;
+          transition: all 250ms;
+}
+.contact-button-link:hover,
+.contact-button-link:focus,
+.contact-button-link:active {
+  color: #fff;
+  padding-left: 20px;
+  width: 70px;
+}
+.contact-button-link.cb-hidden {
+  left: -50px;
+}
+.contact-button-link.facebook {
+  background: #3b5998;
+}
+.contact-button-link.linkedin {
+  background: #0077b5;
+}
+.contact-button-link.gplus {
+  background: #db4437;
+}
+
+.contact-button-link.separated {
+  margin-top: 1em;
+}
+
+.show-hide-contact-bar,
+.contact-button-link.show-hide-contact-bar:focus,
+.contact-button-link.show-hide-contact-bar:active {
+  background: transparent;
+  color: #000;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  width: 50px;
+}
+.contact-button-link.show-hide-contact-bar:hover {
+  color: #000;
+  background: #ccc;
+  padding: 0;
+  width: 50px;
+}
+
+.git {
+  background: #000;
+}
+
+
+/* text hover effect */
+.underlined {
+  flex: 1;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0,lightgreen 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%; /*initially start at x=0*/
+  background-repeat: no-repeat;
+  transition:0.5s;
+}
+.underlined:hover {
+  background-size: 100% 100%; /* end at x=100% - end of the span */
+}
+.underlined--thick {
+  background-position: 0 -0.1em;
+}
+
+
+
+
+
+
+
+
+
+
