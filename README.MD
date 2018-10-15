@@ -15,13 +15,12 @@
 This is a portfolio webpage developed by Tommy Tse. It's a one page design including 4 section:
 * Header
 * About
-* Hobbies
 * Album
 * Contact
 
 ---
 
-# Features
+# Deisgn
 
 - Responsive design to be mobile friendly
 - Full screen overlay hamburger menu button
@@ -31,7 +30,6 @@ This is a portfolio webpage developed by Tommy Tse. It's a one page design inclu
 - Linear gradient color hover animation button
 - animated button
 - Hover to rotate square in about me section
-- 
 
 
 # Change Log
