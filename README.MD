@@ -35,8 +35,6 @@ This is a portfolio webpage developed by Tommy Tse. It's a one page design inclu
 # Change Log
 
 ----
-# first version
-
 ### v1.0.0
 
 ----
