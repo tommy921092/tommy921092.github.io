@@ -8,6 +8,7 @@ body {
   background: #fff;
   margin: 0;
   font-family: 'Saira Extra Condensed', sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, {
@@ -129,6 +130,7 @@ img:hover {
 }
 
 #about h1{
+  width: 80%;
   color: #e85a19;
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
@@ -141,30 +143,38 @@ img:hover {
   border: 2px solid #e85a19;
 }
 
-#about .square {
+.square {
   position: relative;
-  left: 120%;
-  bottom: 30%;
+  left: 95vw;
+  bottom: 75vh;
   height: 40vh;
-  width: 20vh;
+  width: 20vw;
   background: #25aae1;
   transform: rotate(-17deg);
   transition: .5s;
 }
 
-#about .square div {
+.square:hover {
+  background:greenyellow;
+  transition: .5s;
+}
+
+.square div {
   position: absolute;
   content:'';
   height: 40vh;
-  width: 20vh;
+  width: 20vw;
   border: 1px solid rebeccapurple;
   transform: rotate(-10deg);
   transition: .5s;
 }
 
-#about div.rabbit {
-   
+@media screen and (max-width:800px){
+  .square {
+    display: none;
+  }
 }
+
 
 
 /* album section */

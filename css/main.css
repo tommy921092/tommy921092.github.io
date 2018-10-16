@@ -3,14 +3,12 @@
 }
 #wrapper {
 	float: left;
-	height: 100vh;
+	height: 130vh;
 	width: 100%;
 }
 #wrapper-inner{
-	width: 850px;
 	margin-right: auto;
 	margin-left: auto;
-	height: 900px;
 }
 #wrapper-inner-selection{
 	float: left;
@@ -155,13 +153,20 @@ box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05);
 }
 .wrapper-inner-content-text {
 	float: left;
-	width: 500px;
-	padding: 10vh;
+	padding-top: 5vh;
 }
 .wrapper-inner-content-text p {
 	margin-bottom: 25px;
 	color: #338ec4;
 	font-size: 15px;
 	line-height: 23px;
+}
+
+@media screen and (max-width: 1000px) {
+	#album {
+		height:180vh;
+	}
+
+	
 }
 

@@ -22,14 +22,17 @@ This is a portfolio webpage developed by Tommy Tse. It's a one page design inclu
 
 # Deisgn
 
+- header icon(t)
 - Responsive design to be mobile friendly
 - Full screen overlay hamburger menu button
+  (menu text fadeIn from left and right)
 - Responsive contact buttons
 - Sliding background in album section
 - Text-hovering effect
 - Linear gradient color hover animation button
 - animated button
-- Hover to rotate square in about me section
+- Hover to rotate square(change color with transition) in about me section
+
 
 
 # Change Log
@@ -54,6 +57,8 @@ This is a portfolio webpage developed by Tommy Tse. It's a one page design inclu
 [x] Fix the bug for pointer effects
 
 [x] Add function to the send button for contact section
+
+[x]more dynamic detailed content in portfolio section
 
 ---
 
